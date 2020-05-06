@@ -1,15 +1,11 @@
 package com.example.productStore.Entity;
 
-
-
-import java.io.Serializable;
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document
-public class ProductEntity implements Serializable{
-	
+@Document	
+public class CartEntity {
+
 	@Id
 	private Long id;
 	
@@ -64,3 +60,5 @@ public class ProductEntity implements Serializable{
 	
 	
 }
+
+

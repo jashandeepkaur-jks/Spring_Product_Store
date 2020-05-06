@@ -68,5 +68,21 @@ public class ProductCotroller {
 		productRepository.save(prEntity);
 		this.bytes=null;
 	}
+	
+	@GetMapping("/getProductByid/{id}")
+	public ProductEntity fectchProduct(@PathVariable("id") long id) {
+		ProductEntity pEntity=productRepository.findById(id);
+		System.out.println("jiiii");
+		return pEntity;
+	}
+	
+	@PutMapping("/buyNow")
+	public void checkOut(@RequestBody ProductEntity... prEntity) {
+		System.out.println("buy");
+		for(ProductEntity p:prEntity) {
+			productRepository.deleteById(p.getId());
+		}
+	}
+	
 
 }
