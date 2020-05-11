@@ -72,7 +72,6 @@ public class ProductCotroller {
 	@GetMapping("/getProductByid/{id}")
 	public ProductEntity fectchProduct(@PathVariable("id") long id) {
 		ProductEntity pEntity=productRepository.findById(id);
-		System.out.println("jiiii");
 		return pEntity;
 	}
 	
