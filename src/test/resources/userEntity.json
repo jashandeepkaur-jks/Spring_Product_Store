@@ -1,0 +1,21 @@
+[{
+  "_id": 2,
+  "name": "Pulkit",
+  "type": "Admin",
+  "_class": "com.example.productStore.Entity.UserEntity"
+},{
+  "_id": 1,
+  "name": "Jashan",
+  "type": "Admin",
+  "_class": "com.example.productStore.Entity.UserEntity"
+},{
+  "_id": 3,
+  "name": "Prabh",
+  "type": "Admin",
+  "_class": "com.example.productStore.Entity.UserEntity"
+},{
+  "_id": 4,
+  "name": "Mamta",
+  "type": "Admin",
+  "_class": "com.example.productStore.Entity.UserEntity"
+}]
